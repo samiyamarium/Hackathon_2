@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: todo-cli
+Version: 0.1.0
+Summary: A simple CLI todo application
+Author-email: Your Name <your.email@example.com>
+Requires-Python: >=3.13
+Requires-Dist: click>=8.1.7

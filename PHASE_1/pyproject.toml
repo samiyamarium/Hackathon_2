@@ -1,0 +1,19 @@
+[project]
+name = "todo-cli"
+version = "0.1.0"
+description = "A simple CLI todo application"
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+dependencies = [
+    "click>=8.1.7"
+]
+requires-python = ">=3.13"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+todo = "todo_cli.main:main"
