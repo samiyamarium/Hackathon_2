@@ -1,0 +1,24 @@
+name: add_task
+purpose: Create a new task
+parameters:
+  user_id:
+    type: string
+    required: true
+  title:
+    type: string
+    required: true
+  description:
+    type: string
+    required: false
+returns:
+  task_id: int
+  status: string
+  title: string
+example_input:
+  user_id: "ziakhan"
+  title: "Buy groceries"
+  description: "Milk, eggs, bread"
+example_output:
+  task_id: 5
+  status: "created"
+  title: "Buy groceries"

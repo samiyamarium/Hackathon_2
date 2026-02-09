@@ -1,0 +1,27 @@
+name: update_task
+purpose: Modify task title or description
+parameters:
+  user_id:
+    type: string
+    required: true
+  task_id:
+    type: integer
+    required: true
+  title:
+    type: string
+    required: false
+  description:
+    type: string
+    required: false
+returns:
+  task_id: int
+  status: string
+  title: string
+example_input:
+  user_id: "ziakhan"
+  task_id: 1
+  title: "Buy groceries and fruits"
+example_output:
+  task_id: 1
+  status: "updated"
+  title: "Buy groceries and fruits"

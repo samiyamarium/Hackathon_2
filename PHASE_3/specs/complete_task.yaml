@@ -1,0 +1,20 @@
+name: complete_task
+purpose: Mark a task as complete
+parameters:
+  user_id:
+    type: string
+    required: true
+  task_id:
+    type: integer
+    required: true
+returns:
+  task_id: int
+  status: string
+  title: string
+example_input:
+  user_id: "ziakhan"
+  task_id: 3
+example_output:
+  task_id: 3
+  status: "completed"
+  title: "Call mom"

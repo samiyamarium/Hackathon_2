@@ -1,0 +1,21 @@
+name: list_tasks
+purpose: Retrieve tasks from the list
+parameters:
+  user_id:
+    type: string
+    required: true
+  status:
+    type: string
+    required: false
+    enum: ["all", "pending", "completed"]
+returns:
+  - id: int
+    title: string
+    completed: boolean
+example_input:
+  user_id: "ziakhan"
+  status: "pending"
+example_output:
+  - id: 1
+    title: "Buy groceries"
+    completed: false
